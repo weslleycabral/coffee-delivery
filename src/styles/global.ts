@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         -webkit-font-smoothing: antialiased;
-        color: ${color => color.theme["purple"]};
+        color: ${color => color.theme["base-text"]};
     }
 
     body, input, textarea, button {
