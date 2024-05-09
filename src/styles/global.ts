@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         -webkit-font-smoothing: antialiased;
         color: ${color => color.theme["base-text"]};
+        background-color: ${color => color.theme["background"]};
     }
 
     body, input, textarea, button {
