@@ -36,8 +36,8 @@ export const HeroIcons = styled.div`
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    grid-row-gap: 40px;
-    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
 `;
 
 export const SectionContent = styled.section`
