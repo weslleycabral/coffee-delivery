@@ -1,13 +1,13 @@
-import { Text_M_Regular } from "../../../styles/fonts";
-import { ItemContainer } from "./style";
+import { Text_M_Regular } from "../../../../styles/fonts.ts";
+import { ItemContainer } from "./style.ts";
 
-interface ItemHero {
+interface Index {
   icon: JSX.Element;
   text: string;
   color: string;
 }
 
-export function ItemHero({icon, text, color}: ItemHero) {
+export function ItemHero({icon, text, color}: Index) {
 
   return (
     <ItemContainer>

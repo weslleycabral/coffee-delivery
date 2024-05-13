@@ -77,7 +77,7 @@ export const Text_XS_Bold =  styled.p`
     font-weight: 700;
 `;
 
-export const Tag = styled.span`
+export const Tag_Text = styled.span`
     font-family: "Roboto", sans-serif;
     font-size: 0.625rem;
     line-height: 130%;

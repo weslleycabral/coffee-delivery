@@ -1,9 +1,19 @@
-import { HeroIcons, HeroLeft, HeroRight, HeroTitle, SectionHero, SectionContent, CoffeeGrid } from "./style";
+import {
+  HeroIcons,
+  HeroLeft,
+  HeroRight,
+  HeroTitle,
+  SectionHero,
+  SectionContent,
+  CoffeeGrid } from "./style";
+
 import HeroBanner from "../../assets/banner-coffee.png";
 import { Text_L_Regular, Title_L, Title_XL } from "../../styles/fonts";
 import { ItemHero } from "./components/ItemHero";
 import { defaultTheme } from "../../styles/themes/default";
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
+import { Card } from "./components/Card";
+import listCoffees from "../../../data.json";
 
 export function Home() {
 
@@ -49,7 +59,16 @@ export function Home() {
       <SectionContent>
         <Title_L>Nossos cafés</Title_L>
         <CoffeeGrid>
-          
+          {listCoffees.coffees.map(coffee => {
+            <Card
+                key={coffee.id}
+                imgURL={coffee.image}
+                title={coffee.name}
+                description={coffee.description}
+                tags={coffee.tags}
+                value={coffee.price}
+            />
+          })}
         </CoffeeGrid>
       </SectionContent>
     </>
